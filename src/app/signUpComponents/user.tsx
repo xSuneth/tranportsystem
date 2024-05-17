@@ -45,29 +45,6 @@ export function SignUpComponent() {
   return (
     <Card className="mx-auto max-w-sm mt-10 flex flex-center">
       <CardContent>
-<<<<<<< HEAD
-        <form onSubmit={handleSubmit}>
-          <div className="grid gap-4">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="grid gap-2">
-                <Label htmlFor="first-name">First name</Label>
-                <Input
-                  id="first-name"
-                  value={firstName}
-                  onChange={(e) => setFirstName(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="grid gap-2">
-                <Label htmlFor="last-name">Last name</Label>
-                <Input
-                  id="last-name"
-                  value={lastName}
-                  onChange={(e) => setLastName(e.target.value)}
-                  required
-                />
-              </div>
-=======
 
         <div className="grid gap-4">
 
@@ -75,7 +52,6 @@ export function SignUpComponent() {
             <div className="grid gap-2">
               <Label htmlFor="first-name">First name</Label>
               <Input id="first-name" required />
->>>>>>> 4660574379fd39ac9731d951406c51f5c9cf3fac
             </div>
 
             <div className="grid grid-cols-2 gap-4">
@@ -141,15 +117,6 @@ export function SignUpComponent() {
               Create an account
             </Button>
           </div>
-<<<<<<< HEAD
-        </form>
-
-        <div className="mt-4 text-center text-sm">
-          Already have an account?{" "}
-          <Link href="./login/page" className="underline">
-            Sign in
-          </Link>
-=======
 
 
           <div className="grid grid-cols-2 gap-4">
@@ -186,7 +153,6 @@ export function SignUpComponent() {
               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,20}$" required />
             </div>
           </div>
->>>>>>> 4660574379fd39ac9731d951406c51f5c9cf3fac
         </div>
       </CardContent>
     </Card>
