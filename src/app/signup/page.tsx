@@ -15,7 +15,7 @@ export default function SignUpPage() {
       </div><SignUpComponent />
 
       <div className="mt-4 text-center text-sm">
-        Already have an account?{" "}
+        Use 8 or more characters with a mix of letters, numbers & symbols
       </div>
     
       <Button type="submit" className="w-full mt-4">
@@ -23,10 +23,10 @@ export default function SignUpPage() {
       </Button>
 
       <div className="mt-4 text-center text-sm">
-          Already have an account?{" "}
-          <Link href="./login/page" className="underline">
-            Sign in
-          </Link>
+        Already have an account?{" "}
+        <Link href="./login/page.tsx" className="underline">
+          Sign
+        </Link>
       </div>
 
       </CardContent>
