@@ -31,4 +31,31 @@ router.get("/:id", async (req, res) => {
     if (publicTransport) {
       res.status(200).json(publicTransport);
     } else {
-      res.status(404).json
+      res.status(404).json({ message: "Public Transport not found" });
+    }
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+});
+
+// Update Public Transport
+router.put("/:id", async (req, res) => {
+  try {
+    const updatedPublicTransport = await PublicTransport.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    res.status(200).json(updatedPublicTransport);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+});
+
+// Delete Public Transport
+router.delete("/:id", async (req, res) => {
+  try {
+    await PublicTransport.findByIdAndDelete(req.params.id);
+    res.status(200).json({ message: "Public Transport deleted successfully" });
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+});
+
+export default router;
