@@ -43,14 +43,9 @@ export function SignUpComponent() {
   };
 
   return (
-    <Card className="mx-auto max-w-sm mt-10">
-      <CardHeader>
-        <CardTitle className="text-xl">Sign Up</CardTitle>
-        <CardDescription>
-          Enter your information to create an account
-        </CardDescription>
-      </CardHeader>
+    <Card className="mx-auto max-w-sm mt-10 flex flex-center">
       <CardContent>
+<<<<<<< HEAD
         <form onSubmit={handleSubmit}>
           <div className="grid gap-4">
             <div className="grid grid-cols-2 gap-4">
@@ -72,6 +67,15 @@ export function SignUpComponent() {
                   required
                 />
               </div>
+=======
+
+        <div className="grid gap-4">
+
+          <div className="grid grid-cols-2 gap-4 mt-4">
+            <div className="grid gap-2">
+              <Label htmlFor="first-name">First name</Label>
+              <Input id="first-name" required />
+>>>>>>> 4660574379fd39ac9731d951406c51f5c9cf3fac
             </div>
 
             <div className="grid grid-cols-2 gap-4">
@@ -137,6 +141,7 @@ export function SignUpComponent() {
               Create an account
             </Button>
           </div>
+<<<<<<< HEAD
         </form>
 
         <div className="mt-4 text-center text-sm">
@@ -144,6 +149,44 @@ export function SignUpComponent() {
           <Link href="./login/page" className="underline">
             Sign in
           </Link>
+=======
+
+
+          <div className="grid grid-cols-2 gap-4">
+            <div className="grid gap-2">
+              <Label htmlFor="first-name">User Name</Label>
+              <Input id="user-name" required />
+            </div>
+            <div className="grid gap-2">
+              <Label htmlFor="last-name">Mobile Number</Label>
+              <Input id="mobile" required />
+            </div>
+          </div>
+
+
+          <div className="grid gap-2">
+            <Label htmlFor="email">Email</Label>
+            <Input
+              id="email"
+              type="email"
+              placeholder="m@example.com"
+              required
+            />
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            <div className="grid gap-2">
+              <Label htmlFor="first-name">Password</Label>
+              <Input id="password" type="password" required />
+            </div>
+            <div className="grid gap-2">
+              <Label htmlFor="last-name">Confirm Password</Label>
+              <Input id="password" type="password" 
+              minLength={8} maxLength={20}
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,20}$" required />
+            </div>
+          </div>
+>>>>>>> 4660574379fd39ac9731d951406c51f5c9cf3fac
         </div>
       </CardContent>
     </Card>
