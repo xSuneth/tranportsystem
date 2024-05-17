@@ -4,7 +4,7 @@ const MONGODB_URI = process.env.MONGODB_URI;
 
 if (!MONGODB_URI) {
   throw new Error(
-    "Please define the MONGODB_URI environment variable inside .env.local"
+    "mongodb+srv://sunethyz:<password>@cluster0.snybk8z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
   );
 }
 
