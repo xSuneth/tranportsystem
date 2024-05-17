@@ -14,7 +14,7 @@ export function AddAdmin() {
   return (
     <Card className="mx-auto max-w-sm mt-10">
       <CardHeader>
-        <CardTitle className="text-2xl text-center font-bold">Update Admin</CardTitle>
+        <CardTitle className="text-2xl text-center font-bold">Add Admin</CardTitle>
       </CardHeader>
       <CardContent>
         <div className="grid gap-4">
