@@ -1,4 +1,12 @@
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
+
+  /*Bg image*/
+  .backgroundImage {
+    background-image: url("../media/bg_Next.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   

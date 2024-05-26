@@ -7,10 +7,12 @@ import UpdateUserPage from "./signup/updateUser";
 
 export default function Home() {
   return (
-    //<LoginForm/>
-    //<Admin/>
-    //<AddUserPage/>
-    <UpdateUserPage/>
+    <div className="bg-'background-image'">
+      {/* <LoginForm/>
+      <Admin/>
+      <AddUserPage/>*/}
+      <UpdateUserPage/>
+    </div>
   )
     
 }
